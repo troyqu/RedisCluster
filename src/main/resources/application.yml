@@ -1,0 +1,12 @@
+spring:
+  redis:
+    cluster:
+      nodes: 127.0.0.1:6004,127.0.0.1:6005,127.0.0.1:6006,127.0.0.1:6007,127.0.0.1:6008,127.0.0.1:6009
+    timeout: 5000ms
+    lettuce:
+      pool:
+        max-active: 8
+        max-idle: 8
+        min-idle: 0
+        max-wait: -1ms
+    database: 0
